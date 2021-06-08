@@ -1,6 +1,6 @@
 
 
-function temperature(fehrenheit){
+/*function temperature(fehrenheit){
     var celcius=(fehrenheit-32)*5/9;
 
     return celcius;
@@ -71,4 +71,36 @@ document.write("</br>");
 document.write("Min = " + min);
 //write a function to check given number is prime or not 
 //display the prime number
-
+function prime(no){
+    var new_no;
+    var i;
+    for(i=2; i<=no; i=i+1){
+        new_no=no%i;
+        if(new_no==0){
+            return false;
+        }
+        return true;
+        
+        
+    }
+    
+}
+document.write(prime(25));
+document.write("<br>");
+document.write(prime(2));
+document.write("<br>");
+document.write(Math.sqrt(25));
+document.write("<br>");
+document.write(Math.abs(-123));
+document.write("<br>");
+document.write(Math.cos(60*(Math.PI/180)));
+document.write("<br>");
+document.write(Math.log10(10));
+document.write("<br>");
+document.write(Math.pow(5,3));
+document.write("<br>");
+document.write(Math.max(23,1,2,3,4,5,6,7));
+document.write("<br>");
+document.write(Math.min(1,2,3,4,5,6,7));*/
+document.getElementById("myPara").innerText = "helllo this is text";
+document.getElementById("myPara").innerHTML = "<img src="www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" >
