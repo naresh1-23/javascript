@@ -102,5 +102,5 @@ document.write("<br>");
 document.write(Math.max(23,1,2,3,4,5,6,7));
 document.write("<br>");
 document.write(Math.min(1,2,3,4,5,6,7));*/
-document.getElementById("myPara").innerText = "helllo this is text";
-document.getElementById("myPara").innerHTML = "<img src="www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg" >
+document.getElementById("myPara").innerText = "helllo this is text from javascript"
+document.getElementById("myPara").innerHTML = "<img src='download.jpg'></img>"
