@@ -102,5 +102,58 @@ document.write("<br>");
 document.write(Math.max(23,1,2,3,4,5,6,7));
 document.write("<br>");
 document.write(Math.min(1,2,3,4,5,6,7));*/
-document.getElementById("myPara").innerText = "helllo this is text from javascript"
-document.getElementById("myPara").innerHTML = "<img src='download.jpg'></img>"
+//document.getElementById("myPara").innerText = "helllo this is text from javascript"
+//document.write("<br>");
+//document.getElementById("myPara").innerHTML = "<img src='download.jpg'></img>"
+function changemycolor(color){
+    //alert = color;
+    var myn=document.getElementById("myPara")
+    myn.style.backgroundColor= color;
+}
+function onoff(btn){
+    var bulb=document.getElementById("bulb");
+    var status=bulb.getAttribute('src');
+    if(status=='images/off.png'){
+        bulb.setAttribute('src','images/on.png');
+        btn.innerText = "off";
+    }
+    else{
+        bulb.setAttribute('src','images/off.png');
+        btn.innerText="on";
+    }
+}
+
+$('#btn').click(function(){
+    $('#myimg').fadeIn(3000);
+});
+$('#btn2').click(function(){
+    $('#myimg').fadeOut(3000);
+});
+
+$('#source').click(function(){
+    $('#xyz').slideDown("fast");
+    $('xyz').slideTogle("fast");
+});
+$('#close').click(function(){
+    $('#xyz').slideUp("fast");
+});
+$('#anim').click(function(){
+    $('#mybox').animate({
+        'left': '100px',
+        'height': '+=650px',
+        'width': '+=150px',
+        'opacity' : '0.5',
+    }, 5000);
+});
+
+$('#switch').click(function(){
+    var status = $('#samebulb').attr('src');
+    if(status =='images/on.png'){
+        $('#samebulb').attr('src', 'images/off.png');
+        $(this).text("on");
+    }
+    else{
+        $('#samebulb').attr('src', 'images/on.png');
+        $(this).text("off");
+    }
+});

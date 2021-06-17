@@ -1,3 +1,32 @@
 #myPara{
     background-color: blue;
 }
+
+#myimg{
+    display: none;
+}
+
+#source, #xyz, #close{
+    background-color: dodgerblue;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+#xyz{
+    margin-top: 1px;
+    padding:  50px;
+    display: none;
+}
+
+#mybox{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    position:  absolute;
+}
+#anim{
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
